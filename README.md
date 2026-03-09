@@ -204,9 +204,9 @@ customer-revenue-intelligence/
 |-- README.md
 |
 |-- SQL/
-|   |-- 01_data_cleaning.sql
-|   |-- 02_fact_table.sql
-|   |-- 03_customer_summary.sql
+|   |-- 01_fact_table.sql
+|   |-- 02_customer_summary.sql
+|   |-- 03_rfm_base.sql
 |   |-- 04_rfm_scoring.sql
 |   |-- 05_segmentation.sql
 |   |-- 06_business_analysis.sql
@@ -243,9 +243,9 @@ customer-revenue-intelligence/
 **Step 2 — Run SQL Scripts in Order**
 Open SSMS, connect to your SQL Server instance, and run the scripts in this order:
 ```
-01_data_cleaning.sql        — Import and clean raw CSV tables
-02_fact_table.sql           — Build the fact_sales table
-03_customer_summary.sql     — Build the customer_summary table
+01_fact_table.sql           — Build the fact_sales table
+02_customer_summary.sql     — Build the customer_summary table
+03_rfm_base.sql             — Build RFM base table
 04_rfm_scoring.sql          — Calculate RFM scores using NTILE(5)
 05_segmentation.sql         — Assign customer segments
 06_business_analysis.sql    — Run business analysis queries

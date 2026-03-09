@@ -1,5 +1,14 @@
-## Data Preparation & Validation
-
+/*
+============================================================
+  Project : Customer Revenue Intelligence & Segmentation
+  File    : 01_data_validation.sql
+  Purpose : Row count validation, duplicate detection,
+            data type verification and revenue consistency
+            checks across imported Olist tables
+  Author  : Aman Panwar
+  Date    : March 2026
+============================================================
+*/
 During the SQL phase, the Olist dataset was imported into SQL Server 
 and validated before building the analytical model.
 
